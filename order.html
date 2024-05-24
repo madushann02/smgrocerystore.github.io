@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>S&M Grocery Store</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button type="button">Search</button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="dropbtn">About us</a>
+                        <ul class="dropdown-content">
+                            <li><a href="vegetables.html">Vegetables</a></li>
+                            <li><a href="dairy.html">Dairy</a></li>
+                            <li><a href="skincare.html">Skincare</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="order.html">Order page </a></li>
+                    <li><a href="loyalty.html">Loyalty Registeration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section>
+            <main class="main-styling">
+                <div class="order-section">
+                    <h2>Order Summary</h2>
+                    <div id="order-items">
+                        <div class="order-item">
+                            <p>Product Name: </p>
+                            <p>Quantity: </p>
+                            <p>Price: </p>
+                        </div>
+                        <div class="order-item">
+                            <p>Product Name: </p>
+                            <p>Quantity: </p>
+                            <p>Price: </p>
+                        </div>
+                        <div class="order-total">
+                            <p>Total: </p>
+                        </div>
+                    </div>
+                    <div class="customer-details">
+                        <h3>Customer Details</h3>
+                        <form id="customer-details-form">
+                            <div class="form-group">
+                                <label for="customer-name">Name:</label>
+                                <input type="text" id="customer-name" name="customer-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-email">Email:</label>
+                                <input type="email" id="customer-email" name="customer-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Phone:</label>
+                                <input type="tel" id="customer-phone" name="customer-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-address">Address:</label>
+                                <textarea id="customer-address" name="customer-address" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="payment-details">
+                        <h3>Payment Details</h3>
+                        <form id="payment-details-form">
+                            <div class="form-group">
+                                <label for="card-number">Card Number:</label>
+                                <input type="text" id="card-number" name="card-number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-expiry">Expiry Date:</label>
+                                <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-cvc">CVC:</label>
+                                <input type="text" id="card-cvc" name="card-cvc" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div>                    
+                        <a href="#" class="primary-button" id="checkout-btn">Checkout</a>
+                    </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Visit us for a wide selection of organic and locally sourced goods.</p>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us</p>
+                <p>Email: S&Mstores@grocerystore.com</p>
+                <p>Phone: 0768335226</p>
+                <p>Address: 199 Union Pl, Colombo 00200</p>
+            </div>
+    </footer>
+</body>
+</html>
